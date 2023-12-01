@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"sort"
 	"unicode/utf8"
 )
 
@@ -17,6 +18,9 @@ func main() {
 
 	ret := compare([]byte(a), []byte(b))
 	fmt.Println(ret)
+	fmt.Println("-------------------")
+
+	sorting()
 }
 
 func strLen() {
@@ -56,6 +60,14 @@ func compare(a, b []byte) int {
 	return 0
 }
 
-func sorting(a []int64) {
+func sorting() {
+	slice1 := []int{12, 2, 3, 134, 1, 325, 632, 12, 33}
+	sort.Ints(slice1)
+	fmt.Println(slice1)
+	fmt.Println(sort.IntsAreSorted(slice1))
+}
+
+func practice() {
+	//7.12 编写一个函数，要求其接受两个参数，原始字符串 str 和分割索引 i，然后返回两个分割后的字符串。
 
 }

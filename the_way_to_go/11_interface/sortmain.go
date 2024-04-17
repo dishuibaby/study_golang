@@ -1,8 +1,9 @@
 package main
 
 import (
-	"./sort"
 	"fmt"
+
+	"./sort"
 )
 
 func ints() {
@@ -23,6 +24,8 @@ func strings() {
 		panic("fail")
 	}
 	fmt.Printf("The sorted array is: %v\n", a)
+	_bool := sort.StringsAreSorted(a)
+	fmt.Println(_bool)
 }
 
 type day struct {

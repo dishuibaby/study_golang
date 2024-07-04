@@ -1,0 +1,9 @@
+{{ define "user/index.tmpl" }}
+<html>
+    <h1>{{ .title }}</h1>
+</html>
+<body>
+<span>{{ .Content }}</span>
+<span>现在时间:{{ .Now| formatAsDate}}</span>
+</body>
+{{ end }}

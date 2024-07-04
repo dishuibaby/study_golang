@@ -30,12 +30,12 @@ func main() {
 		//工作休息标识
 		action = "休息"
 		if isWork {
-			action = "工作"
+			action = "上班"
 		}
 
-		if !isWork {
-			fmt.Printf("%s 至 %s %s(%d小时)\n", currentCarbon.Format("m-d H:00"), nextCarbon.Format("m-d H:00"), action, addHour)
-		}
+		//if !isWork {
+		fmt.Printf("%s 至 %s %s(%d小时)\n", currentCarbon.Format("m-d H:00"), nextCarbon.Format("m-d H:00"), action, addHour)
+		//}
 
 		isWork = !isWork
 		currentTime = nextCarbon.Timestamp()
